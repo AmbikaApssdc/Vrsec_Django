@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="card mt-5 mx-auto col-md-5">
+			<h2 class="bg-dark text-white text-center p-2 border-rounded">Login</h2>
+			<form class="col-md-11 mx-auto" method="POST">
+				{% csrf_token %}
+				<input type="text" name="uname" placeholder="Enter username" class="form-control mt-2">
+				<input type="password" name="pswd" placeholder="Enter Password" class="form-control mt-2">
+				<input type="submit" name="Login" class="form-control mt-2 btn btn-outline-success">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

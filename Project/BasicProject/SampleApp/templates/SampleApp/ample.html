@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Styling</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/sample.css' %}">
+	<style>
+		h2{
+			background-color: red;
+			color: white;
+			margin: 15px;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="background-color: blue;color: green;margin: 10px;padding: 50px">Inline CSS</h1>
+	<h2>Internal CSS</h2>
+	<div class="container">
+		<label>User Name</label>
+		<input type="text" name="name">
+		<label>Password</label>
+		<input type="password" name="pswd">
+		<button type="submit">Submit</button>
+		<!-- <input type="submit" name="Login"> -->
+	</div>
+</body>
+</html>

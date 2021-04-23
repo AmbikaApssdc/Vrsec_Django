@@ -1,0 +1,27 @@
+.container{
+	margin: auto;
+	padding: 40px;
+	width: 380px;
+	border-radius: 15px;
+	background: lightblue;
+}
+
+input[type='text'],
+input[type='password']{
+	width: 100px;
+	padding: 12px 20px;
+	margin: 5px;
+	border:1px solid #ccc;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+button{
+	background-color: red;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px;
+	cursor: pointer;;
+	border:none;
+	width:100%;
+}
